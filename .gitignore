@@ -1,0 +1,24 @@
+# ignore system files
+.DS_Store
+.idea
+thumbs.db
+__MACOSX
+._*
+.*swp
+.*swo
+.env
+/damerica
+# ignore sitemap.xml
+/sitemap.xml
+
+# ignore the error log and others
+error_log
+.ftpquota
+
+# ignore Aptana and Eclipse project files
+.project
+
+# ignore Eclipse-specific files
+/.externalToolBuilders/
+/.settings/
+/.buildpath

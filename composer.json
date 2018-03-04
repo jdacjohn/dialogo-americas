@@ -1,0 +1,38 @@
+{
+    "repositories": [{
+        "type": "composer",
+        "url": "https://composer.portlandlabs.com"
+    }],
+    "minimum-stability" : "dev",
+    "prefer-stable" : true,
+    "require": {
+        "roave/security-advisories": "dev-master",
+        "h4cc/wkhtmltopdf-amd64": "^0.12.3",
+        "mikehaertl/phpwkhtmltopdf": "^2.2",
+        "profburial/wkhtmltopdf-binaries-osx": "^0.12.1",
+        "vlucas/phpdotenv": "^2.4",
+        "composer/installers": "^1.4",
+        "concrete5/core": "^8.3.1",
+        "portlandlabs/multiple_step_workflow": "^1.0",
+        "portlandlabs/enterprise_internationalization": "^0.8",
+        "concrete5/cloudflare_proxy": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\Src\\": "public_html/application/src"
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "public_html/concrete": ["type:concrete5-core"],
+            "public_html/application/themes/{$name}": ["type:concrete5-theme"],
+            "public_html/packages/{$name}": ["type:concrete5-package"],
+            "public_html/application/blocks/{$name}": ["type:concrete5-block"]
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "5.6"
+        }
+    }
+}
